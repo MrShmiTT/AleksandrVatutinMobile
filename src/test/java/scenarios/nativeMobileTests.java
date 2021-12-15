@@ -10,6 +10,7 @@ public class nativeMobileTests extends BaseTest {
     @Test(groups = {"native"},
           description = "register a new account and then sign in. Make sure that you are on the BudgetActivity page")
     public void nativeTest() throws IllegalAccessException, NoSuchFieldException, InstantiationException {
+
         //Account registration
         getPo().getWelement("registerBtn").click();
         getPo().getWelement("registrationEmail").sendKeys(getProperty("email"));
