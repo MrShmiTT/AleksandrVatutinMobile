@@ -10,9 +10,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <token>
-      NBGrdTeoSCxVrgnZ88mJEn5Yj9ejatZGLAykNvtgBqkbpJLCENHyP2ZXrMVLaO1nyewJ0HmxMTzVdb4uShYmbeBuMZnv/2SvJCnj37EtV3Mc1XBWx50ZRIh6yGL0ii+COGXFxf+Ovylcz3hjszemywzoyjJq50PVZkdX4hmaoW3BrhC3RutFmVqMd4OGkwSPZidf6gGMfJNq7v7V8flyBYKyjsDVjhPdZy4tyiLVgoBTHF1lpNTjF8rG9xjkmh7yhUVEMkfXEWa9Oa4C+BMAXJbhmkIvlAywk/tikB5UIRdyaQIZxw52N3Nwm0IddVSBKC1TAIwsTeXklHNEDdCgWzxwn/fy0BafgljNBGY/m4bdLwXtYpK3lmk32VG6FLYUAugCJWxxh5JrLCa/YFg8UczVELAa95xlunsNTBqI1D1Jgt6PrGMwWX6XVfeNBO0RDmnhkcgS8gT22RsYCDVI3cBf5NiRuJS2QyNqRsYE6Dp7OtVQss7NFaazdN6m3hpI00eTEZRebdMM3qjXNwwgGsSG5VpZMzgzvS+EwxHXV2tNSQOXCz7ESH3uQwJ3JfLqN6BPZir8RQHt8O/bfAwMW7sQ85n0rDU/PryuiLQ63LEStPL71+tUS6O8gj0b6TWFngL3Ff1GE5OYDoqxwijUhY847jXQq5p6JJVwmRRlyz/UnrpeWByhQAfEZSMCIMABd7gn4oaXQMEqckX7oKAm58lfk98MRlDNED7w9VhMJw6G1fyErd65abELD3yqzm9UqKPAG+qAskhMFg/NjWFCHnfFaghbpSn8ohvEag8SI7dHoxLjC7oTh1jT0i+prk0SoiCkd+cEDQEI73g/nqOA1n02OE7WkM7JToxvIHrrrkyhtSxeH5mesJf+dmnsd8UzeieqHa9sTaNHoaLijry0aDM
-    </token>
   </properties>
 
   <dependencies>
@@ -39,10 +36,10 @@
           <suiteXmlFiles>
             <suiteXmlFile>${suite.file}</suiteXmlFile>
           </suiteXmlFiles>
-          <systemPropertyVariables>
-            <ts.appium>http://localhost:4723/wd/hub</ts.appium>
+<!--          <systemPropertyVariables>-->
+<!--&lt;!&ndash;            <ts.appium>http://localhost:4723/wd/hub</ts.appium>&ndash;&gt;-->
 <!--            <ts.appium>https://EPM-TSTF:${token}@mobilecloud.epam.com/wd/hub</ts.appium>-->
-          </systemPropertyVariables>
+<!--          </systemPropertyVariables>-->
         </configuration>
       </plugin>
       <plugin>
@@ -91,7 +88,7 @@
     <profile>
       <id>cloudWeb</id>
       <activation>
-        <activeByDefault>false</activeByDefault>
+        <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
         <suite.file>./src/test/resources/cloudWebTNG.xml</suite.file>
